@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>PIYSHUSHI</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get all links with a "data-scroll" attribute
+        const scrollLinks = document.querySelectorAll('[data-scroll]');
+
+        // Add click event listeners to the links
+        scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                // Get the data-scroll attribute value
+                const scrollType = link.getAttribute('data-scroll');
+
+                // Check if it's set to "smooth" or "jump"
+                if (scrollType === 'smooth') {
+                    // Use smooth scrolling
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1); // Remove the "#"
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+                // Otherwise, use the default jumping behavior
+            });
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <!-- Video Container -->
+    <div class="video-container" >
+        <video autoplay loop muted>
+            <source src="images/home_video_crop.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay Content -->
+        <div class="overlay">
+                <h1 class="nav-logo" style="font-family: 'Lustria'; color: white; font-size: 2.5vw;">PIY RESTAURANT </h1>
+                <nav style="font-family: 'Montserrat'; ">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#aboutus" data-scroll="smooth">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="promo.html">Promotions</a></li>
+                    </ul>
+                </nav>
+            <div class="center-overlay">
+                <p style="font-size: 1.5vw; font-family: 'Montserrat'; letter-spacing: 0.5vw; font-weight: 100; margin-bottom: 5vh;">ทุกจานคือศิลปะ</p>
+                <a href="#reservation" class="btn-overlay" data-scroll="smooth">จองตอนนี้</a>
+            </div>
+        </div>
+    </div>
+  
+
+  <div class="image-section" data-aos="fade-up"> 
+    <h2 style="color: white; font-family: 'Lustria'; font-size: 2.5vw; letter-spacing: 0.5vw; padding: 3vh 0vh 3vh 0vh;"> SASHIMI さしみ</h2>
+    <div class="left-overlay">
+        <div class="home-overlay-row" data-aos="fade-in" data-aos-duration="2000">
+            <h6><strong>Sāmon (サーモン)</strong></h6>
+            <p>โดดเด่นด้วยสีสันสดใสและความสดใหม่ไร้ที่ติของแซลมอนเกรดซาซิมิของเรา
+              ที่มาจากน้ำเย็นจัดโดยตรงเพื่อให้มั่นใจว่าคุณจะได้สัมผัสประสบการณ์ซูชิที่ไม่มีใครเทียบได้
+            </p>
+        </div>
+        <div class="home-overlay-row" data-aos="fade-in" data-aos-duration="2000">
+            <h6><strong>Tai (タイ)</strong></h6>
+            <p> ปลาสแนปเปอร์แดงมีเนื้อที่แน่นและรสชาติหวานเล็กน้อยซึ่งสะท้อนถึงการจับปลาครั้งล่าสุด ทำให้ทุกคำที่กัดเป็นเครื่องพิสูจน์ถึงความสดใหม่ที่ไม่มีใครเทียบได้
+            </p>
+        </div>
+        <div class="home-overlay-row" data-aos="fade-in" data-aos-duration="2000">
+            <h6><strong>Tako (タコ)</strong></h6>
+            <p>
+                ลิ้มรสความนุ่มละมุนของปลาหมึกยักษ์ที่ปรุงอย่างพิถีพิถันจนได้รสชาติที่สมบูรณ์แบบ รสชาติหวานละมุนที่สะท้อนความสดชื่นของท้องทะเล ช่วยเพิ่มรสชาติที่ตัดกันอย่างลงตัวกับซูชิของเรา
+            </p>
+        </div>
+
+    </div>
+    <img src="images/home_ingredients2.png" alt="ingredient" class="ingredient" style="width: 32vw;" >
+    <div class="right-overlay">
+        <div class="home-overlay-row" data-aos="fade-in"  data-aos-duration="2000">
+            <h6><strong>Ōtoro (おおとろ) </strong></h6>
+            <p>ดื่มด่ำไปกับความหรูหราของเนื้อปลาทูน่า (ทูน่าเนื้อแน่น) ของเรา
+                ที่มีรสชาติเป็นหินอ่อนและนุ่มละมุนลิ้น ความเข้มข้นและความนุ่มละมุนจะละลายในปากของคุณ
+            </p>
+        </div>
+        <div class="home-overlay-row" data-aos="fade-in"  data-aos-duration="2000">
+            <h6><strong> Maguro (マグロ)</strong></h6>
+            <p>ปลาทูน่าของเราที่จับมาจากทะเลลึกมีรสชาติที่กลมกล่อม ทุกคำที่กัดจะมอบประสบการณ์ซูชิที่ทั้งสดใหม่และน่าจดจำ
+            </p>
+        </div>
+        <div class="home-overlay-row" data-aos="fade-in" data-aos-duration="2000">
+            <h6><strong>  Sāmon no onaka (サーモンのお腹) </strong></h6>
+            <p>ท้องปลาแซลมอน
+                มีเนื้อสัมผัสที่นุ่มละมุนและรสชาติที่เข้มข้น
+                มีลายหินอ่อนที่สวยงาม
+                และความหวานละมุนละไมเป็นส่วนผสมที่ลงตัว     
+                กับความสมดุลที่ละเอียดอ่อนของไขมันและเนื้อ
+            </p>
+        </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section with Heading and Paragraph -->
+  <div class="bottom-section" id="aboutus" data-aos="fade-up">
+    
+            <div class="overlay-paragraph">
+            <strong><i>PIY RESTAURANT</i>- Where Omakase Becomes Art</strong> <br>
+
+            ที่ PIY RESTAURANT เรามุ่งมั่นที่จะยกระดับประสบการณ์โอมากาเสะให้กลายเป็นรูปแบบศิลปะ 
+ความหลงใหลของเราอยู่ที่การสร้างสรรค์อาหารญี่ปุ่นชั้นเลิศที่ผสมผสานประเพณี ความคิดสร้างสรรค์ และรสชาติที่ไม่มีใครเทียบได้ 
+ร่วมเดินทางสู่โลกแห่งอาหารที่ไม่เหมือนใครกับเรา ซึ่งทุกคำที่กัดจะบอกเล่าเรื่องราวของความเชี่ยวชาญและนวัตกรรมด้านอาหาร
+            </div>
+
+            <div class="overlay-paragraph-2">
+            <!-- <strong>An Opulent Culinary Voyage at <i>SORA</i></strong> <br>
+            Welcome to <i>Sora</i>, where the timeless art of omakase is masterfully orchestrated by our esteemed chef, 
+            the maestro of gastronomy, <strong>Jing Jing</strong>, and guided by the savoir-faire of our owner, <strong>Martin</strong>. <br>
+            <strong>Jing Jing</strong> is a virtuoso of culinary craftsmanship, weaving together the rarest of ingredients with an artisan's touch. <br>
+            Meanwhile, <strong>Martin</strong>, a connoisseur of impeccable service, ensures an atmosphere of refined opulence and sophistication. <br>
+            Join us on an exquisite culinary voyage, where every dish is a symphony of flavors, and every moment is a testament to the highest echelons 
+            of culinary and hospitality excellence.  -->
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- New div with image and reservation form -->
+  <div class="reservation-section" id="reservation" data-aos="fade-up">
+    <div >
+        <img class="left-side"  src="images/reserve.jpg" alt="reservation">
+    </div>
+    <div class="right-side">
+        <div class="right-side-form">
+            <h2 style="color: #ffffff; font-family: 'Montserrat'; font-size: 2vw; letter-spacing: 0.1vw;">RESERVATIONS</h2>
+            <form action="css/show_post.php" method="post">
+                <!-- Reservation form fields -->
+                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+                <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+                <select id="guests" name="guests" required class="guests-select">
+                    <option value="" disabled selected>Number of Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <!-- Add more options as needed -->
+                </select><br><br>
+
+                <div class="date-time-container">
+                    <div class="date-input">
+                        <input type="date" required placeholder="Date" class="textbox-n" type="text" id="date"/>
+                    </div>
+                    <div class="time-select" style="color: white; background-color: #000000; ">
+                        <select id="time" name="time" required>
+                            <option value="" disabled selected>Time</option>
+                            <option value="10:00 AM" style="color: #000000;">10:00 AM</option>
+                            <option value="11:00 AM" style="color: #000000;">11:00 AM</option>
+                            <option value="12:00 PM" style="color: #000000;">12:00 PM</option>
+                            <option value="1:00 PM" style="color: #000000;">1:00 PM</option>
+                            <option value="2:00 PM" style="color: #000000;">2:00 PM</option>
+                            <option value="3:00 PM" style="color: #000000;">3:00 PM</option>
+                            <option value="4:00 PM" style="color: #000000;">4:00 PM</option>
+                            <option value="5:00 PM" style="color: #000000;">5:00 PM</option>
+                            <option value="6:00 PM" style="color: #000000;">6:00 PM</option>
+                            <option value="7:00 PM" style="color: #000000;">7:00 PM</option>
+                            <option value="8:00 PM" style="color: #000000;">8:00 PM</option>
+                            <option value="9:00 PM" style="color: #000000;">9:00 PM</option>
+                            <!-- Add more time options as needed -->
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="BOOK NOW" id="submit">
+            </form>
+            <div class="google-map" data-aos="zoom-in" >
+           
+            </div>
+        </div>
+  </div>
+</div>
+
+<div class="featured" data-aos="fade-up">
+    <h2 style="color: rgba(255, 255, 255, 0.9); font-family: 'Montserrat'; font-size: 1vw; letter-spacing: 0.1vw; text-align: center;">AS SEEN ON:</h2>
+    <div class="featured-img">
+        
+    <img class="feature-card" src="images/home_feature5.png" data-aos="slide-up"  > 
+    
+
+    </div>
+</div>
+
+  <div class="footer">
+    <div class="footer-columns">
+        <!-- Left column for location -->
+        <div class="footer-column">
+            <h4>Location</h4>
+            <a style="color: white;" class="footer-text" href="https://maps.app.goo.gl/o9pXteTp8jFzC18w6">
+                หมู่ที่ 2, 168 169,<br> 
+                ตำบล บางคูเวียง อำเภอบางกรวย<br> <br>
+                นนทบุรี Thailand<br>11130
+                
+            </a>
+        </div>
+
+        <!-- Middle column for logo, nav, and social media -->
+        <div class="footer-column">
+            <h1 style="margin: 0; font-family: 'Lustria'; font-size: 3vw;">PIY</h1>
+            <h2 style="color: grey; font-size: 0.9vw"><i>Omakase Restaurant</i></h2>
+            <div class="footer-nav">
+                <nav>
+                  <ul>
+                    <li><a style="color: white;" href="index.html">Home</a></li>
+                    <li><a style="color: white;" href="index.html#aboutus">About Us</a></li>
+                    <li><a style="color: white;" href="menu.html">Menu</a></li>
+                    <li><a style="color: white;" href="promo.html">Promotions</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+                </nav>
+            </div>
+            <div class="social-media">
+                <!-- Add social media icons/links here -->
+                <a href="https://www.facebook.com/profile.php?id=100011232463541"><i class="fab fa-facebook"></i></a>
+                <a href="hhttps://www.instagram.com/piyawatx23/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Right column for opening hours -->
+        <div class="footer-column">
+            <h4>Opening Hours</h4>
+            <p class="footer-text">
+                Monday - Friday <br>
+                10:00 am - 10:00 pm
+            </p>    
+            <a style="color: white;" href="tel:+6562353535">094-9326807</a> <br>
+            <a style="color: white;" href="mailto:contact@sora.com.sg">contact@Piyawatlsk2@gmail.com</a> 
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
